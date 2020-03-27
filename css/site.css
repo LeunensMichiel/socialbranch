@@ -1,0 +1,134 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: -webkit-gradient(linear, left top, right top, from(#0f2027), color-stop(#203a43), to(#2c5364));
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fefefe;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  min-height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 200;
+  color: #e94057;
+}
+
+figure {
+  display: block;
+  margin-top: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+figure img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fefefe;
+}
+
+section {
+  margin-top: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section > a {
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 32px;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+  -webkit-transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+section > a::after {
+  content: "";
+  width: 100%;
+  height: 8px;
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(#8a2387), color-stop(#e94057), to(#f27121));
+  background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+  z-index: -2;
+}
+
+section > a:hover {
+  color: #ffd4e2;
+}
+
+footer {
+  margin-top: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 300px;
+}
+
+footer a svg {
+  fill: url(#grad) #c4c4c4;
+  -webkit-transition: fill 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: fill 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+footer a:hover svg {
+  fill: #e94057;
+}
+/*# sourceMappingURL=site.css.map */
